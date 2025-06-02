@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Referencias</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contexto.html">Contexto</a></li>
+      <li><a href="varela.html">Varela</a></li>
+      <li><a href="pensamiento.html">Pensamiento</a></li>
+      <li><button class="active" onclick="showPopup('Ya estás en esta página')">Referencias</button></li>
+    </ul>
+    <button class="mode-toggle" onclick="toggleMode()">Cambiar modo</button>
+  </nav>
+
+
+   <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>Ya estás en esta página
+      </div>
+  </div>
+
+
+
+   <section class="frase frase-contexto">
+  <p><h2>Referencias Consultadas:</h2></p>
+
+  <h3>Libros:</h3>
+  <ul>
+    <li>
+      1874, Varela, <em>La educación Popular</em> Tomo 1<br/>
+      <a class="download-btn" href="#" onclick="downloadFile('../bibliografia/Varela.pdf')">Ver PDF</a>
+    </li>
+    <li>
+      1964, Ardao, <em>La educación Popular</em> Tomo 1, ed Juan E. Pivel Devoto<br/>
+      <a class="download-btn" href="#" onclick="downloadFile('../bibliografia/Ardao.pdf')">Ver PDF</a>
+    </li>
+    <li>
+      2020, <em>Nuevas aproximaciones para la comprensión del militarismo uruguayo</em><br/>
+      Manuel Talamante Pérez<br/>
+      <a class="download-btn" href="#" onclick="downloadFile('../bibliografia/Perez.pdf')">Ver PDF</a>
+    </li>
+  </ul>
+
+  <h3>Imágenes:</h3>
+  <ul>
+    <li>
+      <a href="https://es.wikipedia.org/wiki/José_Pedro_Varela" target="_blank" rel="noopener noreferrer">
+        Wikipedia - José Pedro Varela
+      </a>
+    </li>
+    <li>
+      <a href="https://es.wikipedia.org/wiki/Lorenzo_Latorre" target="_blank" rel="noopener noreferrer">
+        Wikipedia - Lorenzo Latorre
+      </a>
+    </li>
+  </ul>
+</section>
+
+
+  <button id="scrollToTopBtn" title="Ir arriba">↑</button>
+  <script src="../script.js"></script>
+</body>
+</html>
